@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>EventHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>EventHub</h1>
+    <p>Browse events, book seats and manage your reservations</p>
+  </div>
+
+  <div class="dashboard">
+    <div>Events<br><span id="totalEvents">0</span></div>
+    <div>Bookings<br><span id="totalBookings">0</span></div>
+    <div>Seats<br><span id="totalSeats">0</span></div>
+    <div>Top Event<br><span id="topEvent">-</span></div>
+    <div>Revenue<br>₹<span id="revenue">0</span></div>
+  </div>
+
+  <div class="filters">
+    <input type="text" id="search" placeholder="Search Events..." onkeyup="searchEvents()">
+
+    <select id="categoryFilter" onchange="filterEvents()">
+      <option value="All">All</option>
+      <option value="Music">Music</option>
+      <option value="Technology">Technology</option>
+      <option value="Food">Food</option>
+    </select>
+
+    <label>
+      <input type="checkbox" id="availableOnly" onchange="filterEvents()">Available Only
+    </label>
+  </div>
+
+  <div class="main">
+
+    <div class="events">
+      <h2>Events</h2>
+      <div id="eventList"></div>
+    </div>
+
+    <div class="bookings">
+      <h2>Booking Records</h2>
+      <div id="bookingList"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+body {
+  font-family: Arial;
+  background: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3") no-repeat center;
+  background-size: cover;
+  color: white;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 5px;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+}
+
+.events {
+  width: 70%;
+}
+
+.bookings {
+  width: 30%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+}
+
+#eventList {
+  display: flex;
+  gap: 15px;
+}
+
+.event-card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  width: 180px;
+}
+
